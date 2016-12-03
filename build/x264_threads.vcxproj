@@ -10,6 +10,24 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\common.c" />
+    <ClCompile Include="..\source\frame.c" />
+    <ClCompile Include="..\source\osdep.c" />
+    <ClCompile Include="..\source\test.c" />
+    <ClCompile Include="..\source\threadpool.c" />
+    <ClCompile Include="..\source\win32thread.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\common.h" />
+    <ClInclude Include="..\source\config.h" />
+    <ClInclude Include="..\source\frame.h" />
+    <ClInclude Include="..\source\inttypes.h" />
+    <ClInclude Include="..\source\osdep.h" />
+    <ClInclude Include="..\source\stdint.h" />
+    <ClInclude Include="..\source\threadpool.h" />
+    <ClInclude Include="..\source\win32thread.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{46160B35-FCBF-480E-9334-6FD8C33C83CA}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -77,23 +95,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="..\common.c" />
-    <ClCompile Include="..\frame.c" />
-    <ClCompile Include="..\osdep.c" />
-    <ClCompile Include="..\test.c" />
-    <ClCompile Include="..\threadpool.c" />
-    <ClCompile Include="..\win32thread.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\common.h" />
-    <ClInclude Include="..\config.h" />
-    <ClInclude Include="..\frame.h" />
-    <ClInclude Include="..\inttypes.h" />
-    <ClInclude Include="..\osdep.h" />
-    <ClInclude Include="..\threadpool.h" />
-    <ClInclude Include="..\win32thread.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
